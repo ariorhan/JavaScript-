@@ -70,3 +70,23 @@ function sayHello() {
 
  const countries = ["Finland", "Australia", "Canada", "USA"]
  countries.forEach((country) => console.log(country.toUpperCase()))
+
+ // map
+
+ const numbers3 = [1, 2, 3, 4, 5]
+ const numbersSquare = numbers3.map((num) => num * num)
+ console.log(numbersSquare)
+
+ const footballClub = [ 'Milan', 'Galatasaray', 'Porto']
+ const upperClubName = footballClub.map((team) => team.toUpperCase())
+ console.log(upperClubName)
+
+ // filter
+ const countries2 = ['Finland', 'Netherland', 'Germany', 'England']
+ const countriesContainingLand = countries2.filter((country) => 
+    country.includes('land'))
+console.log(countriesContainingLand)
+
+const countriesHaveSevenWords = countries2.filter((country2) => 
+    country2.length === 7)
+console.log(countriesHaveSevenWords)
