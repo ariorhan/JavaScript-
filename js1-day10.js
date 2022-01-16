@@ -64,3 +64,24 @@ const languages2 = [
    
   let C = new Set(c)
   console.log('union', C)
+
+  // Creating an Map from Array
+  countries = [ 
+      ['Finland', 'Helsinki'],
+      ['Sweden', 'Stockholm'],
+      ['Norway', 'Oslo'],
+  ]
+  const countriesMap = new Map(countries)
+  console.log(countriesMap)
+  console.log(countriesMap.size)
+
+  countriesMap.set('Turkey', 'Ankara') // adding values to map
+  console.log(countriesMap)
+
+  console.log(countriesMap.get('Turkey')) // getting a value
+
+  console.log(countriesMap.has('USA')) // checking a value
+
+  for (const country of countriesMap) {
+      console.log(country)
+  }                                     // getting all values from map using loop
